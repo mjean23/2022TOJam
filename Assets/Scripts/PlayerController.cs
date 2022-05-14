@@ -26,7 +26,6 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate(){
         
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-        
         moveInput = Input.GetAxis("Horizontal");
         rb.velocity = new Vector2(moveInput*speed, rb.velocity.y);
         

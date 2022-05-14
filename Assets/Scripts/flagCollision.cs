@@ -10,7 +10,7 @@ public class flagCollision : MonoBehaviour{
     public void OnTriggerEnter2D (Collider2D col){
     
         if (col.gameObject.name == "Flag"){
-            SceneManager.LoadScene("Level 1");
+           SceneManager.LoadScene("Level 1");
         }
       
     }

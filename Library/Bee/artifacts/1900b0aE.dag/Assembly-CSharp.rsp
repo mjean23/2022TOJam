@@ -343,6 +343,7 @@
 "Assets/Scripts/CameraControl.cs"
 "Assets/Scripts/flagCollision.cs"
 "Assets/Scripts/FreezeRotation.cs"
+"Assets/Scripts/HiddenBlockCollision.cs"
 "Assets/Scripts/PlayerController.cs"
 -langversion:8.0
 
