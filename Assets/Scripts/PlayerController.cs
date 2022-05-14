@@ -38,10 +38,15 @@ public class PlayerController : MonoBehaviour
         } else if (facingRight == true && moveInput <0){
             reflect();
         }
+        
     }
     
     void Update(){
         jump();
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            UnityEditor.EditorApplication.isPlaying = false;
+            Application.Quit();
+        }
     }
     
     void jump(){
