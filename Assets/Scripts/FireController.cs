@@ -39,7 +39,7 @@ public class FireController : MonoBehaviour
 
     public void OnTriggerEnter2D (Collider2D col) {
         if (col.gameObject.name == "Player") {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Level1");
         } else if (col.gameObject.CompareTag("Wall")) {
             var fireVelocity = gameObject.GetComponent<Rigidbody2D>().velocity;
             gameObject.GetComponent<Rigidbody2D>().velocity = (fireVelocity * -1);

@@ -19,10 +19,10 @@ public class HiddenBlockCollision : MonoBehaviour
     public LayerMask whatIsGround;
     
     
-    private void Start ()
+    private void Awake ()
     {
         mySpriteRenderer = GetComponent<SpriteRenderer>();
-        //mySpriteRenderer.sprite = invis;
+        mySpriteRenderer.sprite = invis;
     }
     void FixedUpdate()
     {

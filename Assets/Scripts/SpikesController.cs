@@ -36,7 +36,7 @@ public class SpikesController : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D col) {
         if (col.gameObject.name == "Player") {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("Level1");
         }
     }
 }
