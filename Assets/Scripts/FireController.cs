@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class FireController : MonoBehaviour
 {
     public string direction;
+    public bool ignoreWalls = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -40,7 +41,7 @@ public class FireController : MonoBehaviour
     public void OnTriggerEnter2D (Collider2D col) {
         if (col.gameObject.name == "Player") {
             SceneManager.LoadScene("SampleScene");
-        } else if (col.gameObject.CompareTag("Wall")) {
+        } else if (col.gameObject.CompareTag("Wall") && !this.ignoreWalls) {
             var fireVelocity = gameObject.GetComponent<Rigidbody2D>().velocity;
             gameObject.GetComponent<Rigidbody2D>().velocity = (fireVelocity * -1);
         }
