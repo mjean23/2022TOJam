@@ -326,6 +326,7 @@
 "Assets/Scripts/flagCollision.cs"
 "Assets/Scripts/FreezeRotation.cs"
 "Assets/Scripts/HiddenBlockCollision.cs"
+"Assets/Scripts/MusicManager.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/SpikesController.cs"
 "Assets/Scripts/SpikeShooterController.cs"
