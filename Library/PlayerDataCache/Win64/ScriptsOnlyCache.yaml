@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - PlayerController
     - SpikeShooterController
     - SpikesController
+    - WallController
     - flagCollision
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -54,8 +55,6 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -149,6 +148,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3722}
     - Class: 114
+      Script: {instanceID: 4284}
+    - Class: 114
       Script: {instanceID: 4868}
     - Class: 114
       Script: {instanceID: 5788}
@@ -186,8 +187,6 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -247,8 +246,6 @@ ScriptsOnlyBuild:
     - Class: 82
       Script: {instanceID: 0}
     - Class: 83
-      Script: {instanceID: 0}
-    - Class: 89
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -743,7 +740,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerClickMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 1ce410260aff66d996d9a47f7405957a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WallController
@@ -833,7 +830,7 @@ ScriptsOnlyBuild:
     className: TMP_FontAsset
   - hash:
       serializedVersion: 2
-      Hash: ee63d5c532119378f1402836dc07eb80
+      Hash: 6658f39ab71639a30a2ff46e747f76aa
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpikeShooterController
@@ -947,7 +944,7 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
-      Hash: 63cacdc268f314519fc44e2e6fc3b9c7
+      Hash: 6838f7cd4d9134acf2aab8ec58724b61
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SpikesController

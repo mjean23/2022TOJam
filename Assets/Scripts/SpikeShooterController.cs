@@ -6,19 +6,11 @@ public class SpikeShooterController : MonoBehaviour
 {
     public bool shootSpikes;
     public string shootDirection;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public SpikesController spike;
     
     public void ShootSpikes() {
+                spike.mySpriteRenderer = spike.GetComponent<SpriteRenderer>();
+                spike.mySpriteRenderer.sprite = spike.solid;
         switch (this.shootDirection) {
             case "up":
                 transform.parent.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * 200);

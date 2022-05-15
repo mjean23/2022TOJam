@@ -6,6 +6,16 @@ using UnityEngine.SceneManagement;
 public class SpikesController : MonoBehaviour
 {
     public string direction;
+    
+    public SpriteRenderer mySpriteRenderer;
+    public Sprite invis;
+    public Sprite solid;
+    
+    private void Awake () {
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+        mySpriteRenderer.sprite = invis;
+    }
+    
     void Start()
     {
         switch (this.direction) {

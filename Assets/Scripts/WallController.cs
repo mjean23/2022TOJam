@@ -4,22 +4,12 @@ using UnityEngine;
 
 public class WallController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public SpriteRenderer mySpriteRenderer;
+    public Sprite invis;
+    
+    private void Awake ()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public void OnTriggerEnter2D (Collider2D col) {
-        // if (col.gameObject.name == "Fire") {
-        //     var fireVelocity = col.gameObject.GetComponent<Rigidbody2D>().velocity;
-        //     col.gameObject.GetComponent<Rigidbody2D>().velocity = (fireVelocity * -1);
-        // }
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
+        mySpriteRenderer.sprite = invis;
     }
 }

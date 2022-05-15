@@ -180,6 +180,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e32610f5b412749a60aaf49acee2be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySpriteRenderer: {fileID: 0}
+  invis: {fileID: 0}
 --- !u!212 &15919893
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -568,7 +570,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435032629}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.111, z: 0}
+  m_LocalPosition: {x: 0, y: -1.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1780960159}
@@ -633,6 +635,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: up
+  mySpriteRenderer: {fileID: 0}
+  invis: {fileID: 0}
+  solid: {fileID: 0}
 --- !u!50 &498567354
 Rigidbody2D:
   serializedVersion: 4
@@ -875,6 +880,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e32610f5b412749a60aaf49acee2be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySpriteRenderer: {fileID: 0}
+  invis: {fileID: 0}
 --- !u!212 &707129298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1193,6 +1200,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: down
+  mySpriteRenderer: {fileID: 0}
+  invis: {fileID: 0}
+  solid: {fileID: 0}
 --- !u!50 &1000049399
 Rigidbody2D:
   serializedVersion: 4
@@ -1509,9 +1519,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1042729852}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f48767787be7b24458a4239d95674423, type: 3}
+  m_Script: {fileID: 11500000, guid: 498e655822c0cb1429e04ce57c520b7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootSpikes: 0
+  shootDirection: 
+  spike: {fileID: 1447883744}
 --- !u!61 &1042729856
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1569,6 +1582,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e32610f5b412749a60aaf49acee2be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySpriteRenderer: {fileID: 0}
+  invis: {fileID: 0}
 --- !u!212 &1045210090
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1978,6 +1993,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: left
+  mySpriteRenderer: {fileID: 1447883746}
+  invis: {fileID: 21300000, guid: 2fdee04168e29f34c907b318721405b5, type: 3}
+  solid: {fileID: 21300000, guid: ae778d20c82967445a74cbba85355b1a, type: 3}
 --- !u!50 &1447883745
 Rigidbody2D:
   serializedVersion: 4
@@ -2241,7 +2259,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8191622581131130997, guid: efbc819a2573db84683e26c33042ee5e, type: 3}
+  m_Sprite: {fileID: 8020143640844766479, guid: 5c13925217f3cd94e8b2b88ef555f04c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2261,7 +2279,7 @@ Transform:
   m_GameObject: {fileID: 1780960156}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.01, y: -2.56, z: 0}
-  m_LocalScale: {x: 5, y: 5, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children:
   - {fileID: 435032630}
   m_Father: {fileID: 0}
@@ -2298,7 +2316,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1780960156}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 81c9b6dcb4f3e024ea5fbf52d7627049, type: 2}
   m_IsTrigger: 0
@@ -2308,7 +2326,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.24}
+    oldSize: {x: 2.85, y: 2.44}
     newSize: {x: 0.16, y: 0.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2326,22 +2344,22 @@ BoxCollider2D:
   m_GameObject: {fileID: 1780960156}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 6200000, guid: 857b804787370454896e41a59f7feb51, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.008406263}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.16, y: 0.24}
+    oldSize: {x: 2.85, y: 2.44}
     newSize: {x: 0.16, y: 0.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.22318745}
+  m_Size: {x: 2.85, y: 2.44}
   m_EdgeRadius: 0
 --- !u!50 &1780960163
 Rigidbody2D:
@@ -2433,6 +2451,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26e32610f5b412749a60aaf49acee2be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mySpriteRenderer: {fileID: 0}
+  invis: {fileID: 0}
 --- !u!212 &2055412668
 SpriteRenderer:
   m_ObjectHideFlags: 0
